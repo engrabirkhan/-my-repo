@@ -279,8 +279,73 @@
 
            //javascript object//
 
+           var mypc={
+              processor:"raygen 5700g",
+              motherboard:"b450 mk",
+              ram:"fury 8gb",
+               ssd:"mp33 pro 512gb",
+               casing:"gamedis aura gc5",
+           }
+
+           document.write((mypc['casing'])+"<br>");
+
+               //javascript Array
+
+           var category=["Apple", "Orange", "Allium", "banana", "Mango",]
+           document.write(category[0]+"<br>");
+
+           //For Loop Over Array
 
 
+           var category=["Apple", "Orange", "Allium", "banana", "Mango", "coconut", "nut", "pineaple"]
+           var i;
+           for (i=0;i<category.length;i++){
+               document.write(category[i]+"<br>");
+           }
+
+
+
+           //For In Loop Over Object
+
+           var person={
+               name:"John",
+               age:25,
+               city:"london",
+               height:"6 feet",
+
+           }
+
+
+           for (var iteam in person){
+               document.write(person[iteam]+"<br>");
+           }
+
+
+
+
+           //  Array Filter
+
+           var numarray=[30,32,34,46,50,55,60,70,];
+
+           var result= numarray.filter(function(item){
+               return iteam>50
+           });
+
+
+
+
+
+          document.write(result);
+
+
+          // JavaScript Date Object
+
+
+           var obj= new date ();
+
+           document.write(
+               obj.getDay()
+           )
 
 
 
